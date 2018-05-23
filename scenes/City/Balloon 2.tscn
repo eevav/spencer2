@@ -4,6 +4,8 @@
 
 [node name="Sprite" type="Sprite" index="0"]
 
+scale = Vector2( 1.2, 1.2 )
 texture = ExtResource( 1 )
+_sections_unfolded = [ "Offset", "Transform" ]
 
 

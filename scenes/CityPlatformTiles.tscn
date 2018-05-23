@@ -7,18 +7,15 @@
 custom_solver_bias = 0.0
 extents = Vector2( 16, 16 )
 
-[node name="Node" type="Node"]
+[node name="Node" type="Node" index="0"]
 
 [node name="Tile1" type="Sprite" parent="." index="0"]
 
 position = Vector2( 48, 32 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 0, 0, 32, 32 )
+region_rect = Rect2( 64, 0, 64, 64 )
 _sections_unfolded = [ "Region" ]
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile1" index="0"]
 
@@ -33,6 +30,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tile1/StaticBody2D" index="0"]
 
 shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="Tile2" type="Sprite" parent="." index="1"]
 
@@ -141,7 +139,8 @@ shape = SubResource( 1 )
 [node name="Tile6" type="Sprite" parent="." index="5"]
 
 editor/display_folded = true
-position = Vector2( 144, 80 )
+position = Vector2( 160, 96 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 128, 32, 32, 32 )
