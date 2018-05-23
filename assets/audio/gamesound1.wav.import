@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/gamesound1.wav-2a8a6d0aa125cd2ce285bbaed5b77b95.sample"
+
+[deps]
+
+source_file="res://assets/audio/gamesound1.wav"
+source_md5="95c2e734c6489469278861623450fc39"
+
+dest_files=[ "res://.import/gamesound1.wav-2a8a6d0aa125cd2ce285bbaed5b77b95.sample" ]
+dest_md5="b0a63a0ba4408fddb2203fd9816b46b7"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

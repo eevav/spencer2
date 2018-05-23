@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/wolfsound1.wav-3d283b941d5fe4ec28fcdf4975ff3d94.sample"
+
+[deps]
+
+source_file="res://sounds/wolfsound1.wav"
+source_md5="d956151a0f39d4b614b16eecca8718cb"
+
+dest_files=[ "res://.import/wolfsound1.wav-3d283b941d5fe4ec28fcdf4975ff3d94.sample" ]
+dest_md5="5a903c691f3efaa09ef779e68610a596"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

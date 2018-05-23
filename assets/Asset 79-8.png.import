@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Asset 79-8.png-0faa9b9359dce48927a592072ac8b1b9.stex"
+
+[deps]
+
+source_file="res://assets/Asset 79-8.png"
+source_md5="9754697d2831b749ef799a2cf1dd8989"
+
+dest_files=[ "res://.import/Asset 79-8.png-0faa9b9359dce48927a592072ac8b1b9.stex" ]
+dest_md5="ff098ff6928a8dd1152373444b716aa6"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

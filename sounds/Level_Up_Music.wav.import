@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Level_Up_Music.wav-85db0343a7fc0d35eca1b9660702da3b.sample"
+
+[deps]
+
+source_file="res://sounds/Level_Up_Music.wav"
+source_md5="b9fb130a87d98f1983883658de7b956a"
+
+dest_files=[ "res://.import/Level_Up_Music.wav-85db0343a7fc0d35eca1b9660702da3b.sample" ]
+dest_md5="5a903c691f3efaa09ef779e68610a596"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

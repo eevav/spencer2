@@ -1,0 +1,234 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://assets/characters/squirrel/Asset 73-8.png" type="Texture" id=2]
+[ext_resource path="res://assets/characters/squirrel/Asset 74-8.png" type="Texture" id=3]
+[ext_resource path="res://assets/characters/squirrel/Asset 75-8.png" type="Texture" id=4]
+[ext_resource path="res://assets/characters/squirrel/Asset 76-8.png" type="Texture" id=5]
+[ext_resource path="res://assets/characters/squirrel/Asset 78-8.png" type="Texture" id=6]
+[ext_resource path="res://assets/audio/fui.wav" type="AudioStream" id=7]
+[ext_resource path="res://sounds/bite1.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/audio/bite2.wav" type="AudioStream" id=9]
+[ext_resource path="res://assets/audio/laugh.wav" type="AudioStream" id=10]
+[ext_resource path="res://sounds/yehuu.wav" type="AudioStream" id=11]
+[ext_resource path="res://assets/audio/wow.wav" type="AudioStream" id=12]
+[ext_resource path="res://assets/audio/yepii1.wav" type="AudioStream" id=13]
+[ext_resource path="res://assets/audio/yepii2.wav" type="AudioStream" id=14]
+[ext_resource path="res://assets/audio/tiuh.wav" type="AudioStream" id=15]
+[ext_resource path="res://sounds/spencer-background-music-1.wav" type="AudioStream" id=16]
+[ext_resource path="res://sounds/spencer-background-music-2.wav" type="AudioStream" id=17]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 39.7789, 26.3055 )
+
+[sub_resource type="CapsuleShape2D" id=3]
+
+custom_solver_bias = 0.0
+radius = 20.0166
+height = 45.0869
+
+[node name="Player" type="KinematicBody2D"]
+
+position = Vector2( 224, 480 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Transform", "collision" ]
+JUMP_HEIGHT = -550
+
+[node name="Sprite" type="AnimatedSprite" parent="." index="0"]
+
+scale = Vector2( 0.2, 0.2 )
+frames = SubResource( 1 )
+animation = "Idle"
+playing = true
+offset = Vector2( 0, 24 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+visible = false
+position = Vector2( 0, -4.39249 )
+scale = Vector2( 1.06452, 1.17366 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." index="2"]
+
+visible = false
+position = Vector2( 0, 28.7946 )
+rotation = 1.5708
+shape = SubResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Camera2D" type="Camera2D" parent="." index="3"]
+
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Smoothing" ]
+
+[node name="Sounds" type="Node2D" parent="." index="4"]
+
+editor/display_folded = true
+
+[node name="fui" type="AudioStreamPlayer2D" parent="Sounds" index="0"]
+
+stream = ExtResource( 7 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="bite1" type="AudioStreamPlayer2D" parent="Sounds" index="1"]
+
+stream = ExtResource( 8 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="bite2" type="AudioStreamPlayer2D" parent="Sounds" index="2"]
+
+stream = ExtResource( 9 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="laugh" type="AudioStreamPlayer2D" parent="Sounds" index="3"]
+
+stream = ExtResource( 10 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="yehuu" type="AudioStreamPlayer2D" parent="Sounds" index="4"]
+
+stream = ExtResource( 11 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="wow" type="AudioStreamPlayer2D" parent="Sounds" index="5"]
+
+stream = ExtResource( 12 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="yepii1" type="AudioStreamPlayer2D" parent="Sounds" index="6"]
+
+stream = ExtResource( 13 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="yepii2" type="AudioStreamPlayer2D" parent="Sounds" index="7"]
+
+stream = ExtResource( 14 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="tiuh" type="AudioStreamPlayer2D" parent="Sounds" index="8"]
+
+stream = ExtResource( 15 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="Music" type="Node2D" parent="." index="5"]
+
+[node name="music1" type="AudioStreamPlayer2D" parent="Music" index="0"]
+
+stream = ExtResource( 16 )
+volume_db = -5.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="music2" type="AudioStreamPlayer2D" parent="Music" index="1"]
+
+stream = ExtResource( 17 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+

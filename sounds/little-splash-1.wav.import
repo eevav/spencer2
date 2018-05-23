@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/little-splash-1.wav-a00e8e2a1767c2f03d500eeca1bca9df.sample"
+
+[deps]
+
+source_file="res://sounds/little-splash-1.wav"
+source_md5="ffc68b1366e3267a5155985c0bdac65d"
+
+dest_files=[ "res://.import/little-splash-1.wav-a00e8e2a1767c2f03d500eeca1bca9df.sample" ]
+dest_md5="a6d29a57ce244e23d55a533a5b9fa0a2"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/oldlady3.wav-b47f49b42bf90fd17e36c1346eff1c77.sample"
+
+[deps]
+
+source_file="res://sounds/oldlady3.wav"
+source_md5="641365e82122042276dcacda66177d2a"
+
+dest_files=[ "res://.import/oldlady3.wav-b47f49b42bf90fd17e36c1346eff1c77.sample" ]
+dest_md5="5a903c691f3efaa09ef779e68610a596"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

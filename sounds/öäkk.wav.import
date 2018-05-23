@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/öäkk.wav-0dc4da79f24b0727ec4d31bc9b87cea7.sample"
+
+[deps]
+
+source_file="res://sounds/öäkk.wav"
+source_md5="281e6be41b3b4185d8f5f95d0c80d15a"
+
+dest_files=[ "res://.import/öäkk.wav-0dc4da79f24b0727ec4d31bc9b87cea7.sample" ]
+dest_md5="5a903c691f3efaa09ef779e68610a596"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

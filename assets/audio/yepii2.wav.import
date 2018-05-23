@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/yepii2.wav-59e86886b5cd7b8fc61cbb53f030785b.sample"
+
+[deps]
+
+source_file="res://assets/audio/yepii2.wav"
+source_md5="ec376c2039df4e63d28a35561ae99bc3"
+
+dest_files=[ "res://.import/yepii2.wav-59e86886b5cd7b8fc61cbb53f030785b.sample" ]
+dest_md5="d842889031f0378cb28b1b963408c8b0"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

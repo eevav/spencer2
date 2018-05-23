@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/wow.wav-d053ade7e85b01baae6035c77743c4ae.sample"
+
+[deps]
+
+source_file="res://sounds/wow.wav"
+source_md5="c3e40fa4c91c3ab9f4e3ba6841d3a049"
+
+dest_files=[ "res://.import/wow.wav-d053ade7e85b01baae6035c77743c4ae.sample" ]
+dest_md5="5a903c691f3efaa09ef779e68610a596"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

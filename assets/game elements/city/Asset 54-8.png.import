@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Asset 54-8.png-1fc0dae9aea6f3d1fe326305fe8fd116.stex"
+
+[deps]
+
+source_file="res://assets/game elements/city/Asset 54-8.png"
+source_md5="6a7da93e6fa88f43a0827a38c0f791c8"
+
+dest_files=[ "res://.import/Asset 54-8.png-1fc0dae9aea6f3d1fe326305fe8fd116.stex" ]
+dest_md5="e9f0561960fdecd923837e89246f5064"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

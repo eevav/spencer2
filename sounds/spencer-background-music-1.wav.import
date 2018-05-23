@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/spencer-background-music-1.wav-84d637284f9f8cc4a14f2faa53beaa2b.sample"
+
+[deps]
+
+source_file="res://sounds/spencer-background-music-1.wav"
+source_md5="3bba0006e03322f84fcc4067cb4f2e81"
+
+dest_files=[ "res://.import/spencer-background-music-1.wav-84d637284f9f8cc4a14f2faa53beaa2b.sample" ]
+dest_md5="c2de41b39f15b36f0c52f226f3b93664"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

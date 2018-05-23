@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/fui.wav-67b6b1a4d134fa3947c61ead283f2f1e.sample"
+
+[deps]
+
+source_file="res://sounds/fui.wav"
+source_md5="8e0a565552af8af67900ff99b37d2f50"
+
+dest_files=[ "res://.import/fui.wav-67b6b1a4d134fa3947c61ead283f2f1e.sample" ]
+dest_md5="5a903c691f3efaa09ef779e68610a596"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

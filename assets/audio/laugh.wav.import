@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/laugh.wav-780e191698a7b48b6aa70f163bae136c.sample"
+
+[deps]
+
+source_file="res://assets/audio/laugh.wav"
+source_md5="9bf9daf250d71445064860af76adaf37"
+
+dest_files=[ "res://.import/laugh.wav-780e191698a7b48b6aa70f163bae136c.sample" ]
+dest_md5="f9d36e261cfb58ded392135b39950328"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

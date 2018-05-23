@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/viuh2.wav-db1cf4dd9bca9c62b6de200feb59a922.sample"
+
+[deps]
+
+source_file="res://sounds/viuh2.wav"
+source_md5="73b69739736fb1774cb23b0abfcb5788"
+
+dest_files=[ "res://.import/viuh2.wav-db1cf4dd9bca9c62b6de200feb59a922.sample" ]
+dest_md5="5a903c691f3efaa09ef779e68610a596"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

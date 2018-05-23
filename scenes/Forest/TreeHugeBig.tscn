@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/game elements/forest/Asset 17-8.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 18.6175, 5.27065 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 45.2368, 4.05476 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 45.2075, 3.35504 )
+
+[node name="TreeHuge" type="Sprite"]
+
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -2 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" index="0"]
+
+position = Vector2( 20.1652, 203.773 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" index="1"]
+
+position = Vector2( 21.99, 97.7067 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" index="2"]
+
+position = Vector2( -18.0782, 62.4924 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="3"]
+
+position = Vector2( 51.5324, -16.9808 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" index="4"]
+
+position = Vector2( -43.8686, -110.516 )
+shape = SubResource( 3 )
+
+

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Asset 76-8.png-fefeb14d761ac884069edcd4d636872a.stex"
+
+[deps]
+
+source_file="res://assets/characters/squirrel/Asset 76-8.png"
+source_md5="e248ae18fd6ff0cd654ff2425f4cafa5"
+
+dest_files=[ "res://.import/Asset 76-8.png-fefeb14d761ac884069edcd4d636872a.stex" ]
+dest_md5="9436e927d01c427eb13cd8b4ea088823"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

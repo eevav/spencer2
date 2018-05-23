@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/spencer-game_music_short.wav-d6b08faaacebdb223b750fae99addb20.sample"
+
+[deps]
+
+source_file="res://assets/music/spencer-game_music_short.wav"
+source_md5="aea6ea5f2220965dce43116004f26152"
+
+dest_files=[ "res://.import/spencer-game_music_short.wav-d6b08faaacebdb223b750fae99addb20.sample" ]
+dest_md5="864d95c0a56474c0df4b1142d6a65af5"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0

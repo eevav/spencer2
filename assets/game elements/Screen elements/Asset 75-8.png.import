@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Asset 75-8.png-a2d4100be4e3918125ca3c34415e395e.stex"
+
+[deps]
+
+source_file="res://assets/game elements/Screen elements/Asset 75-8.png"
+source_md5="88598546cccea4383edbd5f52353f730"
+
+dest_files=[ "res://.import/Asset 75-8.png-a2d4100be4e3918125ca3c34415e395e.stex" ]
+dest_md5="ccc35e55f1a7b65836982b8b2c3c388c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

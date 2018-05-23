@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Asset 2-8.png-bea1ec2157244bfafa6bb43d4050f265.stex"
+
+[deps]
+
+source_file="res://assets/game elements/forest/Asset 2-8.png"
+source_md5="cfe36cd647e4b0438727e543ecf9df57"
+
+dest_files=[ "res://.import/Asset 2-8.png-bea1ec2157244bfafa6bb43d4050f265.stex" ]
+dest_md5="cf6df3d00a288650eca6a9274eb051a4"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0
