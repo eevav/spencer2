@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://scripts/Level1.gd" type="Script" id=1]
 [ext_resource path="res://tilemaps/ForestPlatformTiles.tres" type="TileSet" id=2]
@@ -18,14 +18,19 @@
 [ext_resource path="res://scenes/Forest/BushBig.tscn" type="PackedScene" id=16]
 [ext_resource path="res://scenes/Forest/TreeNarrowBig.tscn" type="PackedScene" id=17]
 [ext_resource path="res://scenes/Forest/TreeHugeBig.tscn" type="PackedScene" id=18]
-[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=19]
-[ext_resource path="res://scenes/Forest/Mushroom.tscn" type="PackedScene" id=20]
-[ext_resource path="res://scenes/Forest/Harvester.tscn" type="PackedScene" id=21]
-[ext_resource path="res://scenes/Forest/Wolf.tscn" type="PackedScene" id=22]
-[ext_resource path="res://scenes/Forest/Logs.tscn" type="PackedScene" id=23]
-[ext_resource path="res://scenes/Forest/ExitToCity.tscn" type="PackedScene" id=24]
+[ext_resource path="res://scenes/Forest/CutTree.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scenes/Forest/Stump.tscn" type="PackedScene" id=20]
+[ext_resource path="res://scenes/Forest/CutTreeTilted.tscn" type="PackedScene" id=21]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=22]
+[ext_resource path="res://scenes/Forest/Mushroom.tscn" type="PackedScene" id=23]
+[ext_resource path="res://scenes/Forest/Harvester.tscn" type="PackedScene" id=24]
+[ext_resource path="res://scenes/Forest/Wolf.tscn" type="PackedScene" id=25]
+[ext_resource path="res://scenes/Forest/Logs.tscn" type="PackedScene" id=26]
+[ext_resource path="res://assets/Asset 82-8.png" type="Texture" id=27]
+[ext_resource path="res://scenes/Forest/ExitToCity.tscn" type="PackedScene" id=28]
+[ext_resource path="res://assets/game elements/Screen elements/taust.png" type="Texture" id=29]
 
-[node name="Level1" type="Node" index="0"]
+[node name="Level1" type="Node"]
 
 script = ExtResource( 1 )
 
@@ -57,6 +62,7 @@ __meta__ = {
 
 [node name="Collectables" type="Node2D" parent="." index="1"]
 
+editor/display_folded = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -676,6 +682,7 @@ position = Vector2( 19098.8, 1086.48 )
 [node name="TreeNarrow4" parent="BackgroundElements" index="15" instance=ExtResource( 7 )]
 
 position = Vector2( 5437.36, 1085.71 )
+offset = Vector2( 0, 9 )
 
 [node name="TreeNarrow2" parent="BackgroundElements" index="16" instance=ExtResource( 7 )]
 
@@ -812,6 +819,7 @@ position = Vector2( 4544.84, 1311.43 )
 [node name="BushSmall11" parent="BackgroundElements" index="49" instance=ExtResource( 14 )]
 
 position = Vector2( 4950, 1310.31 )
+_sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 
 [node name="BushSmall13" parent="BackgroundElements" index="50" instance=ExtResource( 14 )]
 
@@ -895,7 +903,8 @@ position = Vector2( 21041.8, 1310.14 )
 
 [node name="BushBig" parent="BackgroundElements" index="70" instance=ExtResource( 16 )]
 
-position = Vector2( -191.417, 1294.6 )
+position = Vector2( -192, 1280 )
+offset = Vector2( 0, 0 )
 
 [node name="BushBig10" parent="BackgroundElements" index="71" instance=ExtResource( 16 )]
 
@@ -903,19 +912,27 @@ position = Vector2( 176, 2448 )
 
 [node name="BushBig13" parent="BackgroundElements" index="72" instance=ExtResource( 16 )]
 
-position = Vector2( 4810.07, 1294.31 )
+position = Vector2( 4800, 1280 )
+z_index = -1
+offset = Vector2( 0, 0 )
+_sections_unfolded = [ "Offset", "Transform", "Visibility", "Z Index" ]
 
 [node name="BushBig14" parent="BackgroundElements" index="73" instance=ExtResource( 16 )]
 
-position = Vector2( 5324.54, 1294.61 )
+position = Vector2( 5328, 1280 )
+z_index = -1
+offset = Vector2( 0, 0 )
 
 [node name="BushBig15" parent="BackgroundElements" index="74" instance=ExtResource( 16 )]
 
-position = Vector2( 5536.48, 1294.61 )
+position = Vector2( 5536, 1280 )
+z_index = -1
+offset = Vector2( 0, 0 )
 
 [node name="BushBig11" parent="BackgroundElements" index="75" instance=ExtResource( 16 )]
 
-position = Vector2( -1131.62, 1294.52 )
+position = Vector2( -1136, 1280 )
+offset = Vector2( 0, 0 )
 
 [node name="BushBig2" parent="BackgroundElements" index="76" instance=ExtResource( 16 )]
 
@@ -939,11 +956,13 @@ position = Vector2( 6753.09, 1294.97 )
 
 [node name="BushBig9" parent="BackgroundElements" index="81" instance=ExtResource( 16 )]
 
-position = Vector2( 5110.15, 1294.49 )
+position = Vector2( 5104, 1280 )
+z_index = -1
+offset = Vector2( 0, 0 )
 
 [node name="BushBig3" parent="BackgroundElements" index="82" instance=ExtResource( 16 )]
 
-position = Vector2( 11270.6, 1295.82 )
+position = Vector2( 11281, 1287.81 )
 
 [node name="BushBig5" parent="BackgroundElements" index="83" instance=ExtResource( 16 )]
 
@@ -1033,144 +1052,192 @@ position = Vector2( 18095.3, 789.344 )
 
 position = Vector2( 19466.5, 789.149 )
 
-[node name="Player" parent="." index="3" instance=ExtResource( 19 )]
+[node name="TreeNarrow19" parent="BackgroundElements" index="105" instance=ExtResource( 19 )]
 
-position = Vector2( -351.385, 1294.75 )
+position = Vector2( 16512, 1136 )
+scale = Vector2( 0.78, 0.78 )
+
+[node name="TreeNarrow20" parent="BackgroundElements" index="106" instance=ExtResource( 19 )]
+
+position = Vector2( 15920, 1136 )
+scale = Vector2( 0.78, 0.78 )
+
+[node name="TreeNarrow22" parent="BackgroundElements" index="107" instance=ExtResource( 19 )]
+
+position = Vector2( 2720, 1136 )
+scale = Vector2( 0.78, 0.78 )
+
+[node name="TreeNarrow23" parent="BackgroundElements" index="108" instance=ExtResource( 19 )]
+
+position = Vector2( 2800, 1136 )
+scale = Vector2( 0.78, 0.78 )
+
+[node name="TreeNarrow24" parent="BackgroundElements" index="109" instance=ExtResource( 19 )]
+
+position = Vector2( 3328, 1136 )
+scale = Vector2( 0.78, 0.78 )
+
+[node name="TreeNarrow21" parent="BackgroundElements" index="110" instance=ExtResource( 19 )]
+
+position = Vector2( 16400, 1136 )
+scale = Vector2( 0.78, 0.78 )
+
+[node name="Stump" parent="BackgroundElements" index="111" instance=ExtResource( 20 )]
+
+position = Vector2( 15759.5, 1260 )
+
+[node name="Stump3" parent="BackgroundElements" index="112" instance=ExtResource( 20 )]
+
+position = Vector2( 2544.12, 1260.05 )
+
+[node name="CutTreeTilted" parent="BackgroundElements" index="113" instance=ExtResource( 21 )]
+
+position = Vector2( 16703.8, 1147.41 )
+
+[node name="CutTreeTilted2" parent="BackgroundElements" index="114" instance=ExtResource( 21 )]
+
+position = Vector2( 3472.77, 1147.41 )
+
+[node name="Player" parent="." index="3" instance=ExtResource( 22 )]
+
+position = Vector2( 1104, 1184 )
 JUMP_HEIGHT = -700
 
 [node name="Hazards" type="Node2D" parent="." index="4"]
 
+editor/display_folded = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Mushroom" parent="Hazards" index="0" instance=ExtResource( 20 )]
+[node name="Mushroom" parent="Hazards" index="0" instance=ExtResource( 23 )]
 
 position = Vector2( -464, 2512 )
 
-[node name="Mushroom2" parent="Hazards" index="1" instance=ExtResource( 20 )]
+[node name="Mushroom2" parent="Hazards" index="1" instance=ExtResource( 23 )]
 
 position = Vector2( 3733.31, 1327.2 )
 
-[node name="Mushroom5" parent="Hazards" index="2" instance=ExtResource( 20 )]
+[node name="Mushroom5" parent="Hazards" index="2" instance=ExtResource( 23 )]
 
 position = Vector2( 3308.33, 1327.02 )
 
-[node name="Mushroom6" parent="Hazards" index="3" instance=ExtResource( 20 )]
+[node name="Mushroom6" parent="Hazards" index="3" instance=ExtResource( 23 )]
 
 position = Vector2( 3945.33, 1273.38 )
 
-[node name="Mushroom7" parent="Hazards" index="4" instance=ExtResource( 20 )]
+[node name="Mushroom7" parent="Hazards" index="4" instance=ExtResource( 23 )]
 
 position = Vector2( 4255.41, 1006.56 )
 
-[node name="Mushroom11" parent="Hazards" index="5" instance=ExtResource( 20 )]
+[node name="Mushroom11" parent="Hazards" index="5" instance=ExtResource( 23 )]
 
 position = Vector2( 5330, 560 )
 
-[node name="Mushroom12" parent="Hazards" index="6" instance=ExtResource( 20 )]
+[node name="Mushroom12" parent="Hazards" index="6" instance=ExtResource( 23 )]
 
 position = Vector2( 5856, 1328 )
 
-[node name="Mushroom13" parent="Hazards" index="7" instance=ExtResource( 20 )]
+[node name="Mushroom13" parent="Hazards" index="7" instance=ExtResource( 23 )]
 
 position = Vector2( 6568.26, 1006.53 )
 
-[node name="Mushroom14" parent="Hazards" index="8" instance=ExtResource( 20 )]
+[node name="Mushroom14" parent="Hazards" index="8" instance=ExtResource( 23 )]
 
 position = Vector2( 6891.83, 1326.32 )
 
-[node name="Mushroom8" parent="Hazards" index="9" instance=ExtResource( 20 )]
+[node name="Mushroom8" parent="Hazards" index="9" instance=ExtResource( 23 )]
 
 position = Vector2( 4211.77, 1326.65 )
 
-[node name="Mushroom9" parent="Hazards" index="10" instance=ExtResource( 20 )]
+[node name="Mushroom9" parent="Hazards" index="10" instance=ExtResource( 23 )]
 
 position = Vector2( 4270, 1326.65 )
 
-[node name="Mushroom10" parent="Hazards" index="11" instance=ExtResource( 20 )]
+[node name="Mushroom10" parent="Hazards" index="11" instance=ExtResource( 23 )]
 
 position = Vector2( 4330.44, 1326.21 )
 
-[node name="Mushroom3" parent="Hazards" index="12" instance=ExtResource( 20 )]
+[node name="Mushroom3" parent="Hazards" index="12" instance=ExtResource( 23 )]
 
 position = Vector2( 960.398, 1327.08 )
 
-[node name="Mushroom4" parent="Hazards" index="13" instance=ExtResource( 20 )]
+[node name="Mushroom4" parent="Hazards" index="13" instance=ExtResource( 23 )]
 
 position = Vector2( 208, 1328 )
 
-[node name="Harvester" parent="Hazards" index="14" instance=ExtResource( 21 )]
+[node name="Harvester" parent="Hazards" index="14" instance=ExtResource( 24 )]
 
 position = Vector2( 3039.69, 1214.62 )
 
-[node name="Harvester2" parent="Hazards" index="15" instance=ExtResource( 21 )]
+[node name="Harvester2" parent="Hazards" index="15" instance=ExtResource( 24 )]
 
 position = Vector2( 16123.6, 1214.35 )
 
-[node name="Wolf" parent="Hazards" index="16" instance=ExtResource( 22 )]
+[node name="Wolf" parent="Hazards" index="16" instance=ExtResource( 25 )]
 
 position = Vector2( 5623.23, 1246.43 )
 
-[node name="Wolf2" parent="Hazards" index="17" instance=ExtResource( 22 )]
+[node name="Wolf2" parent="Hazards" index="17" instance=ExtResource( 25 )]
 
 position = Vector2( 11719, 1247.35 )
 
 [node name="StaticObjects" type="Node2D" parent="." index="5"]
 
+editor/display_folded = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Logs" parent="StaticObjects" index="0" instance=ExtResource( 23 )]
+[node name="Logs" parent="StaticObjects" index="0" instance=ExtResource( 26 )]
 
 position = Vector2( 2280.49, 1261.01 )
 
-[node name="Logs3" parent="StaticObjects" index="1" instance=ExtResource( 23 )]
+[node name="Logs3" parent="StaticObjects" index="1" instance=ExtResource( 26 )]
 
 position = Vector2( 3827.14, 1261.8 )
 
-[node name="Logs4" parent="StaticObjects" index="2" instance=ExtResource( 23 )]
+[node name="Logs4" parent="StaticObjects" index="2" instance=ExtResource( 26 )]
 
 position = Vector2( 4008.81, 1261.19 )
 
-[node name="Logs5" parent="StaticObjects" index="3" instance=ExtResource( 23 )]
+[node name="Logs5" parent="StaticObjects" index="3" instance=ExtResource( 26 )]
 
 position = Vector2( 4640.15, 1260.77 )
 
-[node name="Logs6" parent="StaticObjects" index="4" instance=ExtResource( 23 )]
+[node name="Logs6" parent="StaticObjects" index="4" instance=ExtResource( 26 )]
 
 position = Vector2( 4830.15, 1260.61 )
 
-[node name="Logs7" parent="StaticObjects" index="5" instance=ExtResource( 23 )]
+[node name="Logs7" parent="StaticObjects" index="5" instance=ExtResource( 26 )]
 
 position = Vector2( 16876.2, 1261.89 )
 
-[node name="Logs8" parent="StaticObjects" index="6" instance=ExtResource( 23 )]
+[node name="Logs8" parent="StaticObjects" index="6" instance=ExtResource( 26 )]
 
 position = Vector2( 17055.3, 1261.29 )
 
-[node name="Logs9" parent="StaticObjects" index="7" instance=ExtResource( 23 )]
+[node name="Logs9" parent="StaticObjects" index="7" instance=ExtResource( 26 )]
 
 position = Vector2( 16959.8, 1103.03 )
 
-[node name="Logs11" parent="StaticObjects" index="8" instance=ExtResource( 23 )]
+[node name="Logs11" parent="StaticObjects" index="8" instance=ExtResource( 26 )]
 
 position = Vector2( 16432.6, 749.16 )
 
-[node name="Logs12" parent="StaticObjects" index="9" instance=ExtResource( 23 )]
+[node name="Logs12" parent="StaticObjects" index="9" instance=ExtResource( 26 )]
 
 position = Vector2( 16200.1, 748.874 )
 
-[node name="Logs13" parent="StaticObjects" index="10" instance=ExtResource( 23 )]
+[node name="Logs13" parent="StaticObjects" index="10" instance=ExtResource( 26 )]
 
 position = Vector2( 15682.5, 877.122 )
 
-[node name="Logs10" parent="StaticObjects" index="11" instance=ExtResource( 23 )]
+[node name="Logs10" parent="StaticObjects" index="11" instance=ExtResource( 26 )]
 
 position = Vector2( 16965, 1206.57 )
 
-[node name="Logs2" parent="StaticObjects" index="12" instance=ExtResource( 23 )]
+[node name="Logs2" parent="StaticObjects" index="12" instance=ExtResource( 26 )]
 
 position = Vector2( -400, 2368 )
 
@@ -1189,9 +1256,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 858.0
+margin_left = 90.0
 margin_top = 32.0
-margin_right = 970.0
+margin_right = 202.0
 margin_bottom = 48.0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 0, 0 )
@@ -1219,9 +1286,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 1187.0
+margin_left = 419.0
 margin_top = 32.0
-margin_right = 1214.0
+margin_right = 446.0
 margin_bottom = 48.0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 0, 0 )
@@ -1249,9 +1316,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 816.0
+margin_left = 48.0
 margin_top = 80.0
-margin_right = 939.0
+margin_right = 171.0
 margin_bottom = 96.0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 0, 0 )
@@ -1279,9 +1346,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 1187.0
+margin_left = 419.0
 margin_top = 79.0
-margin_right = 1208.0
+margin_right = 440.0
 margin_bottom = 95.0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 0, 0 )
@@ -1309,9 +1376,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 1038.0
+margin_left = 270.0
 margin_top = 128.0
-margin_right = 1091.0
+margin_right = 323.0
 margin_bottom = 144.0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 0, 0 )
@@ -1339,9 +1406,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 1187.0
+margin_left = 419.0
 margin_top = 128.0
-margin_right = 1202.0
+margin_right = 434.0
 margin_bottom = 143.0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 0, 0 )
@@ -1363,9 +1430,54 @@ selection_enabled = false
 override_selected_font_color = false
 _sections_unfolded = [ "BBCode", "Rect" ]
 
-[node name="ExitToCity" parent="." index="7" instance=ExtResource( 24 )]
+[node name="Heart1" type="Sprite" parent="UI" index="6"]
+
+position = Vector2( 1125, 52 )
+texture = ExtResource( 27 )
+
+[node name="Heart2" type="Sprite" parent="UI" index="7"]
+
+position = Vector2( 1173, 52 )
+texture = ExtResource( 27 )
+
+[node name="Heart3" type="Sprite" parent="UI" index="8"]
+
+position = Vector2( 1221, 52 )
+texture = ExtResource( 27 )
+
+[node name="ExitToCity" parent="." index="7" instance=ExtResource( 28 )]
 
 position = Vector2( 21144, 1264.51 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="8"]
+
+layer = -1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 0 )
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
+
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Background" type="Sprite" parent="ParallaxBackground/ParallaxLayer" index="0"]
+
+position = Vector2( -1405.3, 0 )
+scale = Vector2( 1.52583, 1.59149 )
+texture = ExtResource( 29 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 15222, 1024 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
 
 [connection signal="picked_an_acorn" from="Collectables/Acorn" to="." method="_on_Acorn_picked_an_acorn"]
 
@@ -1652,5 +1764,7 @@ position = Vector2( 21144, 1264.51 )
 [connection signal="wolf_attack" from="Hazards/Wolf" to="." method="_on_Wolf_wolf_attack"]
 
 [connection signal="wolf_attack" from="Hazards/Wolf2" to="." method="_on_Wolf_wolf_attack"]
+
+[connection signal="travel_to_city" from="ExitToCity" to="." method="_on_ExitToCity_travel_to_city"]
 
 

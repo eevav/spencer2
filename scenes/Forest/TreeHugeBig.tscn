@@ -17,7 +17,7 @@ extents = Vector2( 45.2368, 4.05476 )
 custom_solver_bias = 0.0
 extents = Vector2( 45.2075, 3.35504 )
 
-[node name="TreeHuge" type="Sprite"]
+[node name="TreeHuge" type="Sprite" index="0"]
 
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -36,27 +36,37 @@ bounce = 0.0
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" index="0"]
 
+visible = false
 position = Vector2( 20.1652, 203.773 )
 shape = SubResource( 1 )
+disabled = true
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" index="1"]
 
+visible = false
 position = Vector2( 21.99, 97.7067 )
 shape = SubResource( 1 )
+disabled = true
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" index="2"]
 
+visible = false
 position = Vector2( -18.0782, 62.4924 )
 shape = SubResource( 1 )
+disabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="3"]
 
+visible = false
 position = Vector2( 51.5324, -16.9808 )
 shape = SubResource( 2 )
+disabled = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" index="4"]
 
+visible = false
 position = Vector2( -43.8686, -110.516 )
 shape = SubResource( 3 )
+disabled = true
 
 

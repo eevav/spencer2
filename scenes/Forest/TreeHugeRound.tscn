@@ -42,22 +42,30 @@ bounce = 0.0
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" index="0"]
 
+visible = false
 position = Vector2( -41.6204, 141.917 )
 shape = SubResource( 1 )
+disabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="1"]
 
+visible = false
 position = Vector2( -41.4124, -20.0677 )
 shape = SubResource( 2 )
+disabled = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" index="2"]
 
+visible = false
 position = Vector2( 41.2236, 32.081 )
 shape = SubResource( 3 )
+disabled = true
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" index="3"]
 
+visible = false
 position = Vector2( 41.0186, 194.019 )
 shape = SubResource( 4 )
+disabled = true
 
 
