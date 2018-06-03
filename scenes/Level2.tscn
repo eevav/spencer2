@@ -1,30 +1,35 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://scripts/Level1.gd" type="Script" id=1]
 [ext_resource path="res://tilemaps/CityPlatformTiles_1.tres" type="TileSet" id=2]
 [ext_resource path="res://tilemaps/CityPlatformTiles_2.tres" type="TileSet" id=3]
-[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/Forest/Acorn.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/Forest/Nut.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/Forest/BushDark.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/Forest/TreeBig.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scenes/Forest/TreeNarrow.tscn" type="PackedScene" id=9]
-[ext_resource path="res://scenes/Forest/TreeRound.tscn" type="PackedScene" id=10]
-[ext_resource path="res://scenes/Forest/TreeHuge.tscn" type="PackedScene" id=11]
-[ext_resource path="res://scenes/Forest/TreeHugeRound.tscn" type="PackedScene" id=12]
-[ext_resource path="res://scenes/Forest/TreeRoundBig.tscn" type="PackedScene" id=13]
-[ext_resource path="res://scenes/Forest/TreeSmall.tscn" type="PackedScene" id=14]
-[ext_resource path="res://scenes/Forest/TreeMedium.tscn" type="PackedScene" id=15]
-[ext_resource path="res://scenes/Forest/BushSmall.tscn" type="PackedScene" id=16]
-[ext_resource path="res://scenes/Forest/BushMedium.tscn" type="PackedScene" id=17]
-[ext_resource path="res://scenes/Forest/BushBig.tscn" type="PackedScene" id=18]
-[ext_resource path="res://scenes/Forest/TreeNarrowBig.tscn" type="PackedScene" id=19]
-[ext_resource path="res://scenes/Forest/TreeHugeBig.tscn" type="PackedScene" id=20]
-[ext_resource path="res://scenes/Forest/Mushroom.tscn" type="PackedScene" id=21]
-[ext_resource path="res://scenes/Forest/Harvester.tscn" type="PackedScene" id=22]
-[ext_resource path="res://scenes/Forest/Wolf.tscn" type="PackedScene" id=23]
-[ext_resource path="res://scenes/Forest/Logs.tscn" type="PackedScene" id=24]
-[ext_resource path="res://scenes/Forest/ExitToCity.tscn" type="PackedScene" id=25]
+[ext_resource path="res://scenes/Forest/Acorn.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Forest/Nut.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/Forest/BushDark.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/Forest/TreeBig.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/Forest/TreeNarrow.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/Forest/TreeRound.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/Forest/TreeHuge.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/Forest/TreeHugeRound.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/Forest/TreeRoundBig.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/Forest/TreeSmall.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/Forest/TreeMedium.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/Forest/BushSmall.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/Forest/BushMedium.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/Forest/BushBig.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/Forest/TreeNarrowBig.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/Forest/TreeHugeBig.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scenes/City/Balloon 2.tscn" type="PackedScene" id=20]
+[ext_resource path="res://scenes/City/Balloon.tscn" type="PackedScene" id=21]
+[ext_resource path="res://scenes/City/BalloonOrange.tscn" type="PackedScene" id=22]
+[ext_resource path="res://scenes/City/Bench.tscn" type="PackedScene" id=23]
+[ext_resource path="res://scenes/City/Bin.tscn" type="PackedScene" id=24]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=25]
+[ext_resource path="res://scenes/Forest/Mushroom.tscn" type="PackedScene" id=26]
+[ext_resource path="res://scenes/Forest/Harvester.tscn" type="PackedScene" id=27]
+[ext_resource path="res://scenes/Forest/Wolf.tscn" type="PackedScene" id=28]
+[ext_resource path="res://scenes/Forest/Logs.tscn" type="PackedScene" id=29]
+[ext_resource path="res://scenes/Forest/ExitToCity.tscn" type="PackedScene" id=30]
 
 [node name="Level2" type="Node" index="0"]
 
@@ -48,12 +53,15 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 917483, 0, 0, 917484, 2, 0, 917485, 1, 0, 1048563, 1, 0, 1048564, 1, 0, 1048565, 1, 0, 1048566, 1, 0, 1048567, 1, 0, 1048568, 1, 0, 1048569, 1, 0, 1048570, 1, 0, 1048571, 1, 0, 1048572, 1, 0, 1048573, 1, 0, 1048574, 1, 0, 1048575, 1, 0, 983040, 1, 0, 983041, 1, 0, 1310690, 1, 0, 1310691, 1, 0, 1310692, 1, 0, 1310693, 1, 0, 1310694, 1, 0, 1310695, 1, 0, 1310696, 1, 0, 1310697, 1, 0, 1310698, 1, 0, 1310699, 1, 0, 1310700, 1, 0, 1310701, 1, 0, 1310702, 1, 0, 1310703, 1, 0 )
+tile_data = PoolIntArray( 917494, 0, 0, 917495, 2, 0, 917496, 1, 0, 1048562, 0, 0, 1048563, 2, 0, 1048564, 1, 0, 1048570, 0, 0, 1048571, 2, 0, 1048572, 1, 0, 1179630, 0, 0, 1179631, 2, 0, 1179632, 1, 0 )
 _sections_unfolded = [ "Cell" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="TileMap_2" type="TileMap" parent="." index="1"]
 
-position = Vector2( -288, 32 )
+position = Vector2( -208, -32 )
 mode = 0
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 160, 160 )
@@ -70,111 +78,133 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 589812, 0, 0, 589813, 0, 0, 589814, 0, 0, 589815, 0, 0, 589816, 0, 0, 589817, 0, 0, 589818, 0, 0, 589819, 0, 0, 589820, 0, 0, 589821, 0, 0, 589822, 0, 0, 589823, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0 )
+tile_data = PoolIntArray( 589812, 0, 0, 589813, 0, 0, 589814, 0, 0, 589815, 0, 0, 589816, 0, 0, 589817, 0, 0, 589818, 0, 0, 589819, 0, 0, 589820, 0, 0, 589821, 0, 0, 589822, 0, 0, 589823, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 0, 0, 524316, 0, 0, 524317, 0, 0, 524318, 0, 0, 524319, 0, 0, 524320, 0, 0, 524321, 0, 0, 524322, 0, 0, 524323, 0, 0, 524324, 0, 0, 524325, 0, 0, 524326, 0, 0, 524327, 0, 0, 524328, 0, 0, 524329, 0, 0, 524330, 0, 0, 524331, 0, 0, 524332, 0, 0, 524333, 0, 0, 524334, 0, 0, 524335, 0, 0, 524336, 0, 0, 524337, 0, 0, 524338, 0, 0, 524339, 0, 0, 524340, 0, 0 )
 _sections_unfolded = [ "Cell" ]
-
-[node name="Player" parent="." index="2" instance=ExtResource( 4 )]
-
-position = Vector2( -351.385, 1294.75 )
-JUMP_HEIGHT = -700
-
-[node name="Collectables" type="Node2D" parent="." index="3"]
-
-editor/display_folded = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Acorn" parent="Collectables" index="0" instance=ExtResource( 5 )]
+[node name="Collectables" type="Node2D" parent="." index="2"]
 
-position = Vector2( -406.731, 1619.03 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Nut" parent="Collectables" index="1" instance=ExtResource( 6 )]
+[node name="Acorn" parent="Collectables" index="0" instance=ExtResource( 4 )]
+
+position = Vector2( -512, 800 )
+
+[node name="Nut" parent="Collectables" index="1" instance=ExtResource( 5 )]
 
 position = Vector2( -400, 1568 )
 
-[node name="BackgroundElements" type="Node2D" parent="." index="4"]
+[node name="BackgroundElements" type="Node2D" parent="." index="3"]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BushDark" parent="BackgroundElements" index="0" instance=ExtResource( 6 )]
+
+position = Vector2( 129.977, 1736.78 )
+
+[node name="TreeBig" parent="BackgroundElements" index="1" instance=ExtResource( 7 )]
+
+position = Vector2( -208, 2080 )
+
+[node name="TreeNarrow" parent="BackgroundElements" index="2" instance=ExtResource( 8 )]
+
+position = Vector2( -965.506, 1942.42 )
+
+[node name="TreeRound" parent="BackgroundElements" index="3" instance=ExtResource( 9 )]
+
+position = Vector2( -1616, 1152 )
+
+[node name="TreeHuge" parent="BackgroundElements" index="4" instance=ExtResource( 10 )]
+
+position = Vector2( -1281.84, 2089.68 )
+
+[node name="TreeHugeRound" parent="BackgroundElements" index="5" instance=ExtResource( 11 )]
+
+position = Vector2( -682.865, 2009.09 )
+
+[node name="TreeRoundBig" parent="BackgroundElements" index="6" instance=ExtResource( 12 )]
+
+position = Vector2( -1680, 1088 )
+
+[node name="TreeRoundBig3" parent="BackgroundElements" index="7" instance=ExtResource( 12 )]
+
+position = Vector2( 501.655, 2224.6 )
+
+[node name="TreeSmall" parent="BackgroundElements" index="8" instance=ExtResource( 13 )]
+
+position = Vector2( -442.04, 2090.02 )
+
+[node name="TreeMedium" parent="BackgroundElements" index="9" instance=ExtResource( 14 )]
+
+position = Vector2( -528, 2272 )
+
+[node name="BushSmall" parent="BackgroundElements" index="10" instance=ExtResource( 15 )]
+
+position = Vector2( 0, 1712 )
+
+[node name="BushMedium" parent="BackgroundElements" index="11" instance=ExtResource( 16 )]
+
+position = Vector2( -160, 1712 )
+
+[node name="BushBig" parent="BackgroundElements" index="12" instance=ExtResource( 17 )]
+
+position = Vector2( -368, 1696 )
+
+[node name="TreeNarrow2" parent="BackgroundElements" index="13" instance=ExtResource( 18 )]
+
+position = Vector2( 1040, 2240 )
+
+[node name="TreeHuge9" parent="BackgroundElements" index="14" instance=ExtResource( 19 )]
+
+position = Vector2( -1744, 2240 )
+
+[node name="Sprite" parent="BackgroundElements" index="15" instance=ExtResource( 20 )]
+
+position = Vector2( -1296, 624 )
+
+[node name="Sprite2" parent="BackgroundElements" index="16" instance=ExtResource( 21 )]
+
+position = Vector2( -400, 336 )
+
+[node name="BalloonOrange" parent="BackgroundElements" index="17" instance=ExtResource( 22 )]
+
+position = Vector2( -976, 544 )
+
+[node name="Bench" parent="BackgroundElements" index="18" instance=ExtResource( 23 )]
+
+position = Vector2( -784, 1344 )
+
+[node name="Bin" parent="BackgroundElements" index="19" instance=ExtResource( 24 )]
+
+position = Vector2( -608, 1344 )
+
+[node name="Player" parent="." index="4" instance=ExtResource( 25 )]
+
+position = Vector2( -1248, 1152 )
+JUMP_HEIGHT = -700
+
+[node name="Hazards" type="Node2D" parent="." index="5"]
 
 editor/display_folded = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="BushDark" parent="BackgroundElements" index="0" instance=ExtResource( 7 )]
-
-position = Vector2( 129.977, 1736.78 )
-
-[node name="TreeBig" parent="BackgroundElements" index="1" instance=ExtResource( 8 )]
-
-position = Vector2( -173.155, 2169.19 )
-
-[node name="TreeNarrow" parent="BackgroundElements" index="2" instance=ExtResource( 9 )]
-
-position = Vector2( -965.506, 1942.42 )
-
-[node name="TreeRound" parent="BackgroundElements" index="3" instance=ExtResource( 10 )]
-
-position = Vector2( 277.593, 2187.19 )
-
-[node name="TreeHuge" parent="BackgroundElements" index="4" instance=ExtResource( 11 )]
-
-position = Vector2( -1281.84, 2089.68 )
-
-[node name="TreeHugeRound" parent="BackgroundElements" index="5" instance=ExtResource( 12 )]
-
-position = Vector2( -682.865, 2009.09 )
-
-[node name="TreeRoundBig" parent="BackgroundElements" index="6" instance=ExtResource( 13 )]
-
-position = Vector2( 64.4968, 2229.39 )
-
-[node name="TreeRoundBig3" parent="BackgroundElements" index="7" instance=ExtResource( 13 )]
-
-position = Vector2( 501.655, 2224.6 )
-
-[node name="TreeSmall" parent="BackgroundElements" index="8" instance=ExtResource( 14 )]
-
-position = Vector2( -442.04, 2090.02 )
-
-[node name="TreeMedium" parent="BackgroundElements" index="9" instance=ExtResource( 15 )]
-
-position = Vector2( -320.21, 2125.96 )
-
-[node name="BushSmall" parent="BackgroundElements" index="10" instance=ExtResource( 16 )]
-
-position = Vector2( 0, 1712 )
-
-[node name="BushMedium" parent="BackgroundElements" index="11" instance=ExtResource( 17 )]
-
-position = Vector2( -160, 1712 )
-
-[node name="BushBig" parent="BackgroundElements" index="12" instance=ExtResource( 18 )]
-
-position = Vector2( -368, 1696 )
-
-[node name="TreeNarrow2" parent="BackgroundElements" index="13" instance=ExtResource( 19 )]
-
-position = Vector2( 1040, 2240 )
-
-[node name="TreeHuge9" parent="BackgroundElements" index="14" instance=ExtResource( 20 )]
-
-position = Vector2( -1744, 2240 )
-
-[node name="Hazards" type="Node2D" parent="." index="5"]
-
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Mushroom" parent="Hazards" index="0" instance=ExtResource( 21 )]
+[node name="Mushroom" parent="Hazards" index="0" instance=ExtResource( 26 )]
 
 position = Vector2( -332.41, 1613.01 )
 
-[node name="Harvester" parent="Hazards" index="1" instance=ExtResource( 22 )]
+[node name="Harvester" parent="Hazards" index="1" instance=ExtResource( 27 )]
 
 position = Vector2( 1440, 2128 )
 
-[node name="Wolf" parent="Hazards" index="2" instance=ExtResource( 23 )]
+[node name="Wolf" parent="Hazards" index="2" instance=ExtResource( 28 )]
 
 position = Vector2( 1328, 2480 )
 
@@ -185,7 +215,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Logs" parent="StaticObjects" index="0" instance=ExtResource( 24 )]
+[node name="Logs" parent="StaticObjects" index="0" instance=ExtResource( 29 )]
 
 position = Vector2( -192, 1856 )
 
@@ -378,7 +408,7 @@ selection_enabled = false
 override_selected_font_color = false
 _sections_unfolded = [ "BBCode", "Rect" ]
 
-[node name="ExitToCity" parent="." index="8" instance=ExtResource( 25 )]
+[node name="ExitToCity" parent="." index="8" instance=ExtResource( 30 )]
 
 position = Vector2( 21144, 1264.51 )
 

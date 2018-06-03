@@ -42,7 +42,7 @@ extents = Vector2( 64, 64 )
 custom_solver_bias = 0.0
 extents = Vector2( 64, 64 )
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
 [node name="Platform1" type="Sprite" parent="." index="0"]
 
@@ -97,6 +97,7 @@ shape = SubResource( 2 )
 
 [node name="Platform3" type="Sprite" parent="." index="2"]
 
+editor/display_folded = true
 position = Vector2( 160, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
@@ -127,9 +128,6 @@ texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 208, 16, 128, 128 )
 _sections_unfolded = [ "Region" ]
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Area2D" type="Area2D" parent="Water1" index="0"]
 
@@ -151,10 +149,11 @@ position = Vector2( 176, 112 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 384, 16, 128, 128 )
-_sections_unfolded = [ "Region", "Transform" ]
+_sections_unfolded = [ "Material", "Region", "Transform", "Visibility" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Water2" index="0"]
 
+editor/display_folded = true
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
