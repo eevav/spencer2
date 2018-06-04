@@ -186,4 +186,13 @@ extents = Vector2( 64, 64 )
 7/occluder_offset = Vector2( 64, 32 )
 7/navigation_offset = Vector2( 64, 32 )
 7/shapes = [  ]
+8/name = "Sprite"
+8/texture = ExtResource( 1 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 208, 16, 128, 128 )
+8/is_autotile = false
+8/occluder_offset = Vector2( 64, 64 )
+8/navigation_offset = Vector2( 64, 64 )
+8/shapes = [  ]
 

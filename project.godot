@@ -48,6 +48,11 @@ texture={
 "svg/scale": 1.0
 }
 
+[input]
+
+ui_jump=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
+ ]
+
 [rendering]
 
 environment/default_clear_color=Color( 0.3526, 0.694384, 0.828125, 1 )

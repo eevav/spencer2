@@ -7,9 +7,9 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 9.59291, 72.0472 )
+extents = Vector2( 9.59291, 419.911 )
 
-[node name="ExitToCity" type="Area2D"]
+[node name="ExitToCity" type="Area2D" index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -35,7 +35,8 @@ _sections_unfolded = [ "Offset" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
 
-position = Vector2( -16.3261, 6.42133 )
+visible = false
+position = Vector2( -16.9657, -340.91 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Visibility", "Z Index" ]
 

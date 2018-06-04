@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Asset 8-13.png-fd04f6a23256fb83f94b39489f5997ca.stex"
+
+[deps]
+
+source_file="res://assets/game elements/Screen elements/pähklid_liikumine/Asset 8-13.png"
+source_md5="9569a3e9ca7d927e7cf4ac60e9a4dd89"
+
+dest_files=[ "res://.import/Asset 8-13.png-fd04f6a23256fb83f94b39489f5997ca.stex" ]
+dest_md5="ad0b8ca840442120f2c9aeec04573d4d"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

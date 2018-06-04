@@ -10,7 +10,7 @@ source_file="res://assets/game elements/Screen elements/taust.png"
 source_md5="94138c4925a671f223c226e75dc74c8a"
 
 dest_files=[ "res://.import/taust.png-0aa62dfb82cdd3e8203ce4f8c4958c00.stex" ]
-dest_md5="c798e4abd825a222add683ff2294b51b"
+dest_md5="5a11f4a431e4346c6fed2e0928cc0863"
 
 [params]
 
@@ -18,9 +18,9 @@ compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=1
 flags/filter=false
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=true

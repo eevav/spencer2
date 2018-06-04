@@ -8,7 +8,7 @@
 custom_solver_bias = 0.0
 radius = 58.67
 
-[node name="Nut" type="Area2D" index="0"]
+[node name="Nut" type="Area2D"]
 
 scale = Vector2( 0.3, 0.3 )
 input_pickable = true

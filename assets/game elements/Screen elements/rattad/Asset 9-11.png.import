@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Asset 9-11.png-bdd8c191a04b296f24da831e6009e0f8.stex"
+
+[deps]
+
+source_file="res://assets/game elements/Screen elements/rattad/Asset 9-11.png"
+source_md5="22bdd7334a414295fe7a0458bcbd3b8e"
+
+dest_files=[ "res://.import/Asset 9-11.png-bdd8c191a04b296f24da831e6009e0f8.stex" ]
+dest_md5="3e998d3c6f3014523e5e39656c08428c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

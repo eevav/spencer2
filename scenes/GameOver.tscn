@@ -1,0 +1,135 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://scenes/GameOver.gd" type="Script" id=1]
+[ext_resource path="res://assets/game elements/Screen elements/taust.png" type="Texture" id=2]
+[ext_resource path="res://assets/game elements/Screen elements/Asset 3-11.png" type="Texture" id=3]
+[ext_resource path="res://assets/game elements/Screen elements/hoverid/Asset 8-12.png" type="Texture" id=4]
+[ext_resource path="res://assets/game elements/Screen elements/hoverid/Asset 6-11.png" type="Texture" id=5]
+[ext_resource path="res://assets/game elements/Screen elements/hoverid/Asset 7-12.png" type="Texture" id=6]
+[ext_resource path="res://assets/game elements/Screen elements/hoverid/Asset 1-10.png" type="Texture" id=7]
+[ext_resource path="res://assets/game elements/Screen elements/Asset 107-10.png" type="Texture" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "highlight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 96, 128 )
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "highlight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 96, 128 )
+
+[node name="GameOverScene" type="Node"]
+
+script = ExtResource( 1 )
+
+[node name="Background" type="Sprite" parent="." index="0"]
+
+position = Vector2( 640, 512 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GameOver" type="Sprite" parent="." index="1"]
+
+position = Vector2( 640, 368 )
+scale = Vector2( 1.1, 1.1 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Exit" type="AnimatedSprite" parent="." index="2"]
+
+position = Vector2( 192, 368 )
+scale = Vector2( 1.1, 1.1 )
+frames = SubResource( 1 )
+animation = "default"
+_sections_unfolded = [ "Transform" ]
+
+[node name="ExitArea" type="Area2D" parent="Exit" index="0"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Exit/ExitArea" index="0"]
+
+visible = false
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="TryAgain" type="AnimatedSprite" parent="." index="3"]
+
+position = Vector2( 1088, 368 )
+scale = Vector2( 1.1, 1.1 )
+frames = SubResource( 3 )
+animation = "default"
+_sections_unfolded = [ "Transform" ]
+
+[node name="TryAgainArea" type="Area2D" parent="TryAgain" index="0"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TryAgain/TryAgainArea" index="0"]
+
+visible = false
+shape = SubResource( 4 )
+
+[node name="SadSpencer" type="Sprite" parent="." index="4"]
+
+position = Vector2( 320, 757 )
+scale = Vector2( 1.1, 1.1 )
+texture = ExtResource( 8 )
+_sections_unfolded = [ "Transform" ]
+
+[connection signal="input_event" from="Exit/ExitArea" to="." method="_on_ExitArea_input_event"]
+
+[connection signal="mouse_entered" from="Exit/ExitArea" to="." method="_on_ExitArea_mouse_entered"]
+
+[connection signal="mouse_exited" from="Exit/ExitArea" to="." method="_on_ExitArea_mouse_exited"]
+
+[connection signal="input_event" from="TryAgain/TryAgainArea" to="." method="_on_TryAgainArea_input_event"]
+
+[connection signal="mouse_entered" from="TryAgain/TryAgainArea" to="." method="_on_TryAgainArea_mouse_entered"]
+
+[connection signal="mouse_exited" from="TryAgain/TryAgainArea" to="." method="_on_TryAgainArea_mouse_exited"]
+
+
