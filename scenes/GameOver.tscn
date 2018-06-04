@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scenes/GameOver.gd" type="Script" id=1]
@@ -24,10 +25,23 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
+=======
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scenes/GameOver.gd" type="Script" id=1]
+[ext_resource path="res://assets/game elements/Screen elements/taust.png" type="Texture" id=2]
+[ext_resource path="res://assets/game elements/Screen elements/Asset 104-10.png" type="Texture" id=3]
+[ext_resource path="res://assets/game elements/Screen elements/Asset 105-10.png" type="Texture" id=4]
+[ext_resource path="res://assets/game elements/Screen elements/Asset 1-10.png" type="Texture" id=5]
+[ext_resource path="res://assets/game elements/Screen elements/Asset 107-10.png" type="Texture" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 
 custom_solver_bias = 0.0
 extents = Vector2( 96, 128 )
 
+<<<<<<< HEAD
 [sub_resource type="SpriteFrames" id=3]
 
 animations = [ {
@@ -43,11 +57,18 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=4]
+=======
+[sub_resource type="RectangleShape2D" id=2]
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 
 custom_solver_bias = 0.0
 extents = Vector2( 96, 128 )
 
+<<<<<<< HEAD
 [node name="GameOverScene" type="Node"]
+=======
+[node name="GameOverScene" type="Node" index="0"]
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 
 script = ExtResource( 1 )
 
@@ -66,12 +87,20 @@ scale = Vector2( 1.1, 1.1 )
 texture = ExtResource( 3 )
 _sections_unfolded = [ "Transform" ]
 
+<<<<<<< HEAD
 [node name="Exit" type="AnimatedSprite" parent="." index="2"]
 
 position = Vector2( 192, 368 )
 scale = Vector2( 1.1, 1.1 )
 frames = SubResource( 1 )
 animation = "default"
+=======
+[node name="Exit" type="Sprite" parent="." index="2"]
+
+position = Vector2( 192, 368 )
+scale = Vector2( 1.1, 1.1 )
+texture = ExtResource( 4 )
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 _sections_unfolded = [ "Transform" ]
 
 [node name="ExitArea" type="Area2D" parent="Exit" index="0"]
@@ -87,6 +116,7 @@ audio_bus_name = "Master"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Exit/ExitArea" index="0"]
 
 visible = false
+<<<<<<< HEAD
 shape = SubResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
@@ -97,6 +127,21 @@ scale = Vector2( 1.1, 1.1 )
 frames = SubResource( 3 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
+=======
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="TryAgain" type="Sprite" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 1088, 368 )
+scale = Vector2( 1.1, 1.1 )
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 
 [node name="TryAgainArea" type="Area2D" parent="TryAgain" index="0"]
 
@@ -111,17 +156,26 @@ audio_bus_name = "Master"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TryAgain/TryAgainArea" index="0"]
 
 visible = false
+<<<<<<< HEAD
 shape = SubResource( 4 )
+=======
+shape = SubResource( 2 )
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 
 [node name="SadSpencer" type="Sprite" parent="." index="4"]
 
 position = Vector2( 320, 757 )
 scale = Vector2( 1.1, 1.1 )
+<<<<<<< HEAD
 texture = ExtResource( 8 )
+=======
+texture = ExtResource( 6 )
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 _sections_unfolded = [ "Transform" ]
 
 [connection signal="input_event" from="Exit/ExitArea" to="." method="_on_ExitArea_input_event"]
 
+<<<<<<< HEAD
 [connection signal="mouse_entered" from="Exit/ExitArea" to="." method="_on_ExitArea_mouse_entered"]
 
 [connection signal="mouse_exited" from="Exit/ExitArea" to="." method="_on_ExitArea_mouse_exited"]
@@ -132,4 +186,8 @@ _sections_unfolded = [ "Transform" ]
 
 [connection signal="mouse_exited" from="TryAgain/TryAgainArea" to="." method="_on_TryAgainArea_mouse_exited"]
 
+=======
+[connection signal="input_event" from="TryAgain/TryAgainArea" to="." method="_on_TryAgainArea_input_event"]
+
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 

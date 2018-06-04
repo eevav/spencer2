@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=18 format=2]
+=======
+[gd_scene load_steps=14 format=2]
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 
 [ext_resource path="res://scripts/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/backgrounds/forest/bg04.png" type="Texture" id=2]
@@ -7,6 +11,7 @@
 [ext_resource path="res://assets/backgrounds/forest/bg02.png" type="Texture" id=5]
 [ext_resource path="res://assets/game elements/Screen elements/taust.png" type="Texture" id=6]
 [ext_resource path="res://assets/Asset 83-8.png" type="Texture" id=7]
+<<<<<<< HEAD
 [ext_resource path="res://assets/game elements/Screen elements/hoverid/Asset 136-12.png" type="Texture" id=8]
 [ext_resource path="res://assets/game elements/Screen elements/hoverid/Asset 135-12.png" type="Texture" id=9]
 [ext_resource path="res://assets/Asset 80-8.png" type="Texture" id=10]
@@ -29,11 +34,20 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
+=======
+[ext_resource path="res://assets/game elements/Screen elements/Asset 112-10.png" type="Texture" id=8]
+[ext_resource path="res://assets/Asset 80-8.png" type="Texture" id=9]
+[ext_resource path="res://assets/Asset 79-8.png" type="Texture" id=10]
+[ext_resource path="res://assets/game elements/Screen elements/Asset 105-10.png" type="Texture" id=11]
+
+[sub_resource type="CapsuleShape2D" id=1]
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 
 custom_solver_bias = 0.0
 radius = 58.5245
 height = 152.033
 
+<<<<<<< HEAD
 [sub_resource type="SpriteFrames" id=3]
 
 animations = [ {
@@ -49,6 +63,9 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=4]
+=======
+[sub_resource type="RectangleShape2D" id=2]
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 
 custom_solver_bias = 0.0
 extents = Vector2( 92.5241, 124.971 )
@@ -107,6 +124,10 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="PlaySign" type="AnimatedSprite" parent="Elements" index="1"]
 
+<<<<<<< HEAD
+=======
+editor/display_folded = true
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 position = Vector2( 1041.28, 749.362 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 1 )
@@ -134,7 +155,11 @@ _sections_unfolded = [ "Transform" ]
 [node name="Instructions" type="Sprite" parent="Elements" index="2"]
 
 position = Vector2( 303, 778 )
+<<<<<<< HEAD
 texture = ExtResource( 10 )
+=======
+texture = ExtResource( 9 )
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 _sections_unfolded = [ "Transform" ]
 
 [node name="Tip" type="Sprite" parent="Elements" index="3"]
@@ -143,6 +168,7 @@ position = Vector2( 983.257, 185.969 )
 texture = ExtResource( 11 )
 _sections_unfolded = [ "Transform" ]
 
+<<<<<<< HEAD
 [node name="Exit" type="AnimatedSprite" parent="Elements" index="4"]
 
 editor/display_folded = true
@@ -150,6 +176,14 @@ position = Vector2( 100, 110 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 3 )
 animation = "default"
+=======
+[node name="Exit" type="Sprite" parent="Elements" index="4"]
+
+position = Vector2( 100, 110 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 11 )
+_sections_unfolded = [ "Transform" ]
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 
 [node name="ExitArea" type="Area2D" parent="Elements/Exit" index="0"]
 
@@ -163,6 +197,7 @@ audio_bus_name = "Master"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Elements/Exit/ExitArea" index="0"]
 
+<<<<<<< HEAD
 visible = false
 position = Vector2( 2.85715, 2.85715 )
 shape = SubResource( 4 )
@@ -179,4 +214,13 @@ shape = SubResource( 4 )
 
 [connection signal="mouse_exited" from="Elements/Exit/ExitArea" to="." method="_on_ExitArea_mouse_exited"]
 
+=======
+position = Vector2( 2.85715, 2.85715 )
+shape = SubResource( 2 )
+
+[connection signal="input_event" from="Elements/PlaySign/Area2D" to="." method="_on_Area2D_input_event"]
+
+[connection signal="input_event" from="Elements/Exit/ExitArea" to="." method="_on_ExitArea_input_event"]
+
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 

@@ -16,6 +16,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 108.41, 40.6972 )
 
+<<<<<<< HEAD
 [sub_resource type="SpriteFrames" id=2]
 
 animations = [ {
@@ -25,6 +26,8 @@ animations = [ {
 "speed": 12.0
 } ]
 
+=======
+>>>>>>> 47359cceaf33268ffba09cf8a0cadeba140bd4c1
 [node name="Harvester" type="KinematicBody2D"]
 
 input_pickable = false
